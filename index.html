@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Tonyfy GameWorld</h1>
+    <p id="description">Thank you for taking your time to help us improve this platform</p>
+  </header>
+  <main class="container">
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" type="text" placeholder="Enter your name here">
+      </fieldset>
+      <fieldset>
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </fieldset>
+      <fieldset>
+        <label id="number-label" for="number">Age: </label>
+        <input id="number" type="number" min="18" max="45" placeholder="Age">
+      </fieldset>
+      <fieldset>
+        <p>What platform do you use to play your games?</p>
+        <select name="console" id="dropdown">
+            <option disabled selected value>Select your console</option>
+            <option value="ps">PlayStation</option>
+            <option value="xbox">Xbox</option>
+            <option value="nintendo">Nintendo</option>
+            <option value="pc">PC</option>
+            <option value="other">Prefer not to say</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>What is your gender?</p>
+        <label>
+            <input type="radio" value="Male" name="gender" id="input-radio"> Male
+        </label>
+        <label>
+            <input type="radio" value="Female" name="gender" id="input-radio"> Female
+        </label>
+        <label>
+            <input type="radio" value="Prefer not to say" name="gender" id="input-radio"> Prefer not to say
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+        <label><input type="checkbox" value="Delivery" name="prefer" class="checkbox"> Delivery</label>
+        <label><input type="checkbox" value="Customer Care" name="prefer" class="checkbox"> Customer Care</label>
+        <label><input type="checkbox" value="Delivery" name="prefer" class="checkbox"> Delivery</label>
+      </fieldset>
+      <fieldset>
+        <p>Any Comments?</p>
+        <textarea name="suggest" id="suggest" cols="60" rows="8" placeholder="Enter your comment here"></textarea>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
